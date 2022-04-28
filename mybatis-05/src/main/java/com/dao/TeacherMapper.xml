@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dao.TeacherMapper">
+    <!--id填方法名，resultType填全类名 -->
+    <select id="getTeacherById" resultType="com.pojo.Teacher" parameterType="int">
+            select * from mybatis.teacher where  id=#{tid}
+    </select>
+</mapper>
